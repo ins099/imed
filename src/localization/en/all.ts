@@ -1,0 +1,75 @@
+export default {
+  IMED: 'IMed',
+  WELCOME_TO_IMED: 'Welcome to iMed ✋',
+  HEALTH_FOOTSTEP: 'Healthcare at your fingertips',
+  BY_CONTINUING:
+    'By continuing, you agree that you read and confirm our Terms of Use',
+  SIGNIN_GOOGLE: 'Signin with Google',
+  SIGNIN_APPLE: 'Signin with Apple',
+  EXPERIENCE_PREMIUM_HEALTH: 'Experience Premium Healthcare around the world',
+  SELECT_COUNTRY_SERVICE:
+    'Please select a country from below where we provide services',
+  DIDNT_FIND_COUNTRY: 'Didn’t find your country?',
+  NEXT: 'Next',
+  ENTER_MOBILE_FOR_VERIFICATION:
+    'Enter your mobile number for account verification',
+  SEND_OTP_AT_NUMBER:
+    'We’ll send a one-time password (OTP) to this number to verify your account',
+  PLEASE_VERIFY_OTP: 'Please verify your mobile number with an OTP',
+  DIDNT_RECIEVE_OTP: "Didn't recieve OTP?",
+  ENTER_YOUR_PERSONAL_INFO:
+    'Please enter your personal information in the fields',
+  NAME: 'Name',
+  SURNAME: 'Surname',
+  PATRONYM: 'Patronym',
+  PATRONYM_PLACEHOLDER: 'Patronym (optional)',
+  DOB: 'Date of Birth',
+  DD: 'DD',
+  MM: 'MM',
+  YYYY: 'YYYY',
+  GENDER: 'Gender',
+  MALE: 'Male',
+  FEMALE: 'Female',
+  CHOOSE_OPTIONAL: 'Choose (Optional)',
+  PLEASE_YOUR_ADDRESS: 'Please add your address',
+  TYPE_YOUR_ADDRESS: 'Type your address here',
+
+  TURN_ON_NOTIFICATIONS: 'Turn on notifications!',
+  BE_AWARE_OF_NEWS:
+    "Be aware of the news in time! . Don't miss out on exclusive offers.",
+  MAYBE_LATER: 'Maybe Later',
+  ADJUST_NOTIFICATIONS:
+    'You can adjust notifications in the "Profile" section.',
+
+  SHOW_ON_MAP: 'Show on map',
+  SAVE_ADDRESS: 'Save Address',
+  WHAT_ARE_YOU_LOOKING: 'What are you looking for',
+  CALLING_A_DOCTOR: 'Calling a doctor',
+  LAB_ANALYSIS: 'Laboratory Analysis',
+  DIAGNOSTIC_AT_HOME: 'Diagnostice at Home',
+  LAB_INFO:
+    'The user can use the on-site laboratory analysis function by calling any address from selected hospitals and laboratories..',
+  SELECT_TYPE_ANALYSIS: 'Select they type of analaysis',
+  CHEAPEST: 'The cheapest',
+  'WELCOME,': 'Welcome,',
+  HOME: 'Home',
+  SERVICES: 'Services',
+  ORDERS: 'Orders',
+  PROFILE: 'Profile',
+  MEDICAL_PARTNERS: 'Medical Partner',
+  SPECIAL_OFFERS: 'Special Offers',
+  ' ': ' ',
+  STATE_REASON_REQUEST: 'State the reason for the appeal',
+  SELECT_TIME: 'Select Time',
+  CHOOSE_A_DAY: 'Choose a day',
+  SELECT_AN_ADDRESS: 'Select an Address',
+
+  REACH_OUT_TO_HOSPITAL:
+    "We'll forward it to the hospital, and they’ll reach out to you directly.",
+  GO_MY_ORDERS: 'Go to my orders',
+  GO_TO_HOMEPAGE: 'Go to homepage',
+  ORDER_RECIEVED: 'Order received!',
+  MY_ADDRESSES: 'My addresses',
+  SELECT_ONE_OF_EXISTING_ADDRESS: 'Select one of existing address',
+  ADD_ADDRESS: 'Add address',
+};
