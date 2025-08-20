@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>en</string>
+		<key>CFBundleDisplayName</key>
+		<string>IMed</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>$(PRODUCT_NAME)</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(MARKETING_VERSION)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>com.googleusercontent.apps.2321809169-m7cf6ae61pr4lpghq392npuqadq8bm0l</string>
+				</array>
+			</dict>
+		</array>
+		<key>CFBundleVersion</key>
+		<string>$(CURRENT_PROJECT_VERSION)</string>
+		<key>GIDClientID</key>
+		<string>2321809169-m7cf6ae61pr4lpghq392npuqadq8bm0l.apps.googleusercontent.com</string>
+		<key>LSRequiresIPhoneOS</key>
+		<true />
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>To get your current location detail</string>
+		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+		<string>To get your current location detail</string>
+		<key>NSLocationAlwaysUsageDescription</key>
+		<string>To get your current location detail</string>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIRequiredDeviceCapabilities</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UIViewControllerBasedStatusBarAppearance</key>
+		<false />
+		<key>UIAppFonts</key>
+		<array>
+			<string>AntDesign.ttf</string>
+			<string>Entypo.ttf</string>
+			<string>EvilIcons.ttf</string>
+			<string>Feather.ttf</string>
+			<string>FontAwesome.ttf</string>
+			<string>FontAwesome5_Brands.ttf</string>
+			<string>FontAwesome5_Regular.ttf</string>
+			<string>FontAwesome5_Solid.ttf</string>
+			<string>FontAwesome6_Brands.ttf</string>
+			<string>FontAwesome6_Regular.ttf</string>
+			<string>FontAwesome6_Solid.ttf</string>
+			<string>Foundation.ttf</string>
+			<string>Ionicons.ttf</string>
+			<string>MaterialIcons.ttf</string>
+			<string>MaterialCommunityIcons.ttf</string>
+			<string>SimpleLineIcons.ttf</string>
+			<string>Octicons.ttf</string>
+			<string>Zocial.ttf</string>
+			<string>Fontisto.ttf</string>
+			<string>Literal-Bold.otf</string>
+			<string>Literal-Light.otf</string>
+			<string>Literal-Regular.otf</string>
+		</array>
+		<key>NSAppTransportSecurity</key>
+		<dict>
+			<key>NSExceptionDomains</key>
+			<dict>
+				<key>13.60.113.40</key>
+				<dict>
+					<key>NSIncludesSubdomains</key>
+					<true />
+					<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+					<true />
+					<key>NSTemporaryExceptionMinimumTLSVersion</key>
+					<string>TLSv1.1</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</plist>
