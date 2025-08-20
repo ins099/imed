@@ -1,0 +1,60 @@
+diff --git a/node_modules/react-native-dropdown-picker/index.d.ts b/node_modules/react-native-dropdown-picker/index.d.ts
+index 338c9de..ef4efce 100644
+--- a/node_modules/react-native-dropdown-picker/index.d.ts
++++ b/node_modules/react-native-dropdown-picker/index.d.ts
+@@ -155,6 +155,8 @@ declare module 'react-native-dropdown-picker' {
+ 
+   interface DropDownPickerBaseProps<T> {
+     items: ItemType<T>[];
++    renderSelectedItem: () => React.ReactNode
++    renderModal: () => React.ReactNode
+     open: boolean;
+     placeholder?: string;
+     closeAfterSelecting?: boolean;
+diff --git a/node_modules/react-native-dropdown-picker/src/components/Picker.js b/node_modules/react-native-dropdown-picker/src/components/Picker.js
+index e3fb93b..d706eff 100644
+--- a/node_modules/react-native-dropdown-picker/src/components/Picker.js
++++ b/node_modules/react-native-dropdown-picker/src/components/Picker.js
+@@ -49,6 +49,8 @@ import RenderListItem from './RenderListItem';
+ import ListEmpty from './ListEmpty';
+ 
+ function Picker({
++    renderSelectedItem = null,
++    renderModal = null,
+     value = null,
+     items = [],
+     open,
+@@ -752,7 +754,7 @@ function Picker({
+         },
+         ...[style].flat(),
+         ...[_disabledStyle].flat(),
+-        pickerNoBorderRadius
++        // pickerNoBorderRadius
+     ]), [rtl, style, _disabledStyle, pickerNoBorderRadius, _zIndex, THEME]);
+ 
+     /**
+@@ -903,6 +905,7 @@ function Picker({
+      * @returns {JSX.Element}
+      */
+     const SimpleBodyComponent = useMemo(() => (
++        renderSelectedItem ? renderSelectedItem(_selectedItemLabel):
+         <>
+             {SelectedItemIconComponent}
+             <Text style={_labelStyle} {...labelProps}>
+@@ -1645,7 +1648,7 @@ function Picker({
+      * @returns {JSX.Element}
+      */
+     const DropDownComponentWrapper = useCallback((Component) => (
+-        <View style={_dropDownContainerStyle}>
++        <View style={[_dropDownContainerStyle,{borderTopRightRadius:12,borderTopLeftRadius:12}]}>
+             {SearchComponent}
+             {Component}
+         </View>
+@@ -1758,6 +1761,7 @@ function Picker({
+      * @returns {JSX.Element}
+      */
+     const DropDownModalComponent = useMemo(() => (
++        renderModal? renderModal(DropDownFlatListComponent):
+         <Modal animationType={modalAnimationType} visible={open} presentationStyle="fullScreen" onRequestClose={onRequestCloseModal} {...modalProps}>
+             <SafeAreaView style={_modalContentContainerStyle}>
+                 {SearchComponent}
